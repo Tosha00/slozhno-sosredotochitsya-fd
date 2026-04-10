@@ -2,3 +2,29 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --main-title-color: #db00ff;
+
+  --cover-image: url(../images/cover-image-dark.png);
+  --padding: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --main-title-color: #ffc2e6;
+    --cover-image: url(../images/cover-image-light.png);
+  }
+}
+
+@media (width >= 600px) {
+  :root {
+    --padding: 20px;
+  }
+}
