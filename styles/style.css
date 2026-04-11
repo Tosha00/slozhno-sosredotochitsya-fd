@@ -2,12 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  /* background: var(--cover-image) bottom / cover no-repeat; */
-  /* background-attachment: fixed; */
+  background: var(--cover-image) bottom / cover no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
-  background: var(--cover-image) bottom / cover no-repeat;
   padding: var(--padding);
   min-height: 100vh;
 }
