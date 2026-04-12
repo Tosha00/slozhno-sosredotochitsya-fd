@@ -13,16 +13,6 @@
   --padding: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root.theme-auto {
-    --bg-color: #fff1f7;
-    --text-color: #353430;
-    --accent-color: #ff8dcb;
-    --main-title-color: #ffc2e6;
-    --cover-image: url(../images/cover-image-light.png);
-  }
-}
-
 @media (width >= 600px) {
   :root {
     --padding: 20px;
