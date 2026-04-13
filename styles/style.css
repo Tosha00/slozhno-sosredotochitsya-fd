@@ -271,6 +271,7 @@
 
 h4.section__sub-title {
   font-weight: 400;
+	margin-block-end: 10px;
 }
 
 .section__sub-title:has(+ .section__sub-list) {
