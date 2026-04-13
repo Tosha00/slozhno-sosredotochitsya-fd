@@ -25,4 +25,62 @@
     --main-title-color: #ffc2e6;
     --cover-image: url(../images/cover-image-light.png);
   }
+
+  .theme-auto .decoration::before,
+  .theme-auto .decoration::after {
+    border-color: var(--text-color);
+  }
+
+  .theme-auto .decoration__text {
+    display: none;
+  }
+
+  .theme-auto .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
+  .theme-auto .header__text {
+    color: currentColor;
+  }
+
+  .theme-auto .section__title {
+    color: var(--text-color);
+  }
+
+  .theme-auto .section__sub-title {
+    color: var(--text-color);
+  }
+
+  .theme-auto .section__item-title {
+    color: var(--text-color);
+  }
+}
+
+.theme-light .decoration::before,
+.theme-light .decoration::after {
+  border-color: var(--text-color);
+}
+
+.theme-light .decoration__text {
+  display: none;
+}
+
+.theme-light .header__theme-menu-button {
+  color: var(--text-color);
+}
+
+.theme-light .header__text {
+  color: currentColor;
+}
+
+.theme-light .section__title {
+  color: var(--text-color);
+}
+
+.theme-light .section__sub-title {
+  color: var(--text-color);
+}
+
+.theme-light .section__item-title {
+  color: var(--text-color);
 }
