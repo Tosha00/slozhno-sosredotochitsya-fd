@@ -33,9 +33,9 @@
 .decoration::after {
   content: "";
   position: absolute;
-  border-color: var(--accent-color);
   border-inline-end: 1px solid;
   border-block-start: 1px solid;
+	border-color: var(--accent-color);
   inline-size: 25px;
   aspect-ratio: 1 / 1;
 }
@@ -191,12 +191,12 @@
 }
 
 .main {
-  padding: 40px var(--padding) 30px;
+  padding: 40px var(--padding);
 }
 
 @media (width >= 600px) {
   .main {
-    padding: 60px var(--padding) 40px;
+    padding: 60px var(--padding);
   }
 }
 
@@ -212,7 +212,8 @@
 
 .section {
   display: grid;
-  grid-template-columns: 13fr 27fr;
+  /* grid-template-columns: 13fr 27fr; */
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
 
