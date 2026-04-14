@@ -5,20 +5,15 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-
-  --bg-color: #fff1f7;
-  --text-color: #353430;
-  --accent-color: #ff8dcb;
-  --main-title-color: #ffc2e6;
-  --cover-image: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --main-title-color: #ffc2e6;
+    --cover-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --bg-color: #fff1f7;
     --text-color: #353430;
     --accent-color: #ff8dcb;
@@ -26,32 +21,28 @@
     --cover-image: url(../images/cover-image-light.png);
   }
 
-  .theme-auto .decoration::before,
-  .theme-auto .decoration::after {
+  .decoration::before,
+  .decoration::after {
     border-color: var(--text-color);
   }
 
-  .theme-auto .decoration__text {
+  .decoration__text {
     display: none;
   }
 
-  .theme-auto .header__theme-menu-button {
+  .header__theme-menu-button {
     color: var(--text-color);
   }
 
-  .theme-auto .header__text {
+  .header__text {
     color: currentColor;
   }
 
-  .theme-auto .section__title {
+  .section__title {
     color: var(--text-color);
   }
 
-  .theme-auto .section__sub-title {
-    color: var(--text-color);
-  }
-
-  .theme-auto .section__item-title {
+  .section__sub-title {
     color: var(--text-color);
   }
 }
@@ -78,9 +69,5 @@
 }
 
 .theme-light .section__sub-title {
-  color: var(--text-color);
-}
-
-.theme-light .section__item-title {
   color: var(--text-color);
 }
